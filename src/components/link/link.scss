@@ -1,0 +1,20 @@
+@import "/src/sass/colors";
+
+.link-wrapper {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+
+  & a {
+    color: $clr-primary;
+  }
+}
+
+.link-layout {
+  align-items: center;
+  display: flex;
+  gap: .5em;
+  justify-content: center;
+}
