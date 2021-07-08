@@ -10,9 +10,13 @@ $clr-neutral-40: hsl(0, 0%, 40%);
 $clr-neutral-20: hsl(0, 0%, 20%);
 $clr-neutral: hsl(0, 0%, 0%);
 
-$clr-primary: hsl(208, 41%, 53%);
-$clr-secondary:hsl(314, 71%, 46%);
-$clr-accent:hsl(291, 67%, 39%);
+$clr-primary: hsl(269, 48%, 90%);
+$clr-primary-dark: hsl(238, 34%, 60%);
+$clr-secondary: hsl(276, 84%, 75%);
+$clr-secondary-dark:hsl(235, 22%, 31%);
+$clr-accent: hsl(189, 59%, 76%);
 
 $clr-gradient-start: hsl(314, 58%, 68%);
 $clr-gradient-end: hsl(220, 43%, 47%); 
+$clr-gradient: linear-gradient(45deg, $clr-gradient-start 0%, $clr-gradient-end 75%);
+$clr-background: rgb(220,125,198);

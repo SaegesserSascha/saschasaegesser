@@ -3,9 +3,9 @@
 
 .landing-wrapper {
   align-items: center;
-  background: rgb(220,125,198);
-  background: linear-gradient(45deg, rgba(220,125,198,1) 0%, rgba(69,103,172,1) 75%);
-  color: $clr-white;
+  background: $clr-background;
+  background: $clr-gradient;
+  color: $clr-primary;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -20,7 +20,7 @@
 
 .landing-text {
   align-items: flex-start;
-  border-left: 6px solid $clr-white;
+  border-left: 6px solid $clr-primary;
   display: flex;
   flex-direction: column;
   justify-content: center;

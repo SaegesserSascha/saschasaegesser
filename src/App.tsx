@@ -1,5 +1,6 @@
 import Introduction from "components/introduction/Introduction";
 import Landing from "components/landing/Landing";
+import Footer from "components/footer/Footer";
 import { useEffect } from "react";
 import { useState } from "react";
 import "./App.scss";
@@ -23,6 +24,9 @@ function App() {
       </div>
       <div className="foreground section section-2">
         <Introduction />
+      </div>
+      <div className="background section section-3">
+        <Footer offsetY={offsetY} />
       </div>
     </div>
   );
