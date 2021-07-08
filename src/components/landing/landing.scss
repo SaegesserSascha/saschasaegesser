@@ -1,0 +1,77 @@
+@import "/src/sass/colors";
+@import "/src/sass/breakpoints";
+
+.landing-wrapper {
+  align-items: center;
+  background: rgb(220,125,198);
+  background: linear-gradient(45deg, rgba(220,125,198,1) 0%, rgba(69,103,172,1) 75%);
+  color: $clr-white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.landing-text-wrapper {
+  max-width: 80%;
+  display: flex;
+}
+
+.landing-text {
+  align-items: flex-start;
+  border-left: 6px solid $clr-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1em;
+  text-shadow: 1px 1px 1px $clr-neutral-20, 1px 1px 3px $clr-neutral-40;
+
+  & > h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+
+    @include mq(s) {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      line-height: 3rem;
+    }
+  }
+
+  & > h2 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+
+    @include mq(s) {
+      font-size: 2rem;
+      letter-spacing: 3px;
+      line-height: 2rem;
+    }
+  }  
+}
+
+.spacer {
+  height: 72px;
+}
+
+.scroll-hint > path {
+  box-shadow: 1px 1px 30px $clr-neutral-40;
+}
+
+.scroll-hint,
+.spacer {
+  margin-bottom: 4em;
+  animation: scroll-hint-bumper 1.5s infinite ease-in-out;
+}
+
+@keyframes scroll-hint-bumper {
+  0% {margin-bottom: 4em;}
+  20% {margin-bottom: 3em;}
+  40% {margin-bottom: 4em;}
+  60% {margin-bottom: 3em;}
+  80% {margin-bottom: 4em;}
+  100% {margin-bottom: 4em;}
+}
